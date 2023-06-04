@@ -46,7 +46,15 @@
       padding: 8px 2px;
       width: 122px;
     }
-  </style>
+  </style> 
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({ 
+      token: "efc57f07465f461c998a08a3017677d9"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+    TrackJS.track("Testing TrackJS");
+  </script>
 </head>
 
 <body>
