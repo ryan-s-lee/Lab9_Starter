@@ -111,7 +111,13 @@ window.addEventListener("load", function(event) {
     }
     deep();
   });
-  errorBtns[14].addEventListener("click", function() { 
-
+  errorBtns[14].addEventListener("click", function(event) { 
+    bruh();
   });
+})
+window.addEventListener("error", () => {
+  console.group("global error event");
+  console.log("This error was caught using a listener for the window's error event. Proof is given by the trace below.");
+  console.trace();
+  console.groupEnd();
 })
